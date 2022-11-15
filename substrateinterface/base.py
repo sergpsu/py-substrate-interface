@@ -1506,7 +1506,7 @@ class SubstrateInterface:
                         return subscription_result
 
         if callable(subscription_handler):
-
+            print(storage_hash)
             return self.rpc_request("state_subscribeStorage", [[storage_hash]], result_handler=result_handler)
 
         else:
